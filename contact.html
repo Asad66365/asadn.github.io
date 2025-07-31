@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact - Asad Naseer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #0c77f2;
+            --background-color: #121212;
+            --text-primary: #e0e0e0;
+            --text-secondary: #bdbdbd;
+            --accent-color: #2196f3;
+        }
+        body {
+            @apply font-sans bg-[var(--background-color)] text-[var(--text-primary)];
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .main_container {
+            @apply container mx-auto px-4 py-8;
+        }
+        .button_primary {
+            @apply bg-[var(--primary-color)] text-white px-4 py-2 rounded-md hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50;
+        }
+        .typography_h1 {
+            @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
+        }
+        .typography_body {
+            @apply text-[var(--text-secondary)];
+        }
+        .contact_links {
+            @apply flex flex-col items-center space-y-4;
+        }
+        .contact_link {
+            @apply text-[var(--text-primary)] hover:text-[var(--primary-color)];
+        }
+        .home_button {
+            @apply absolute top-8 right-8 bg-gray-700 text-white px-6 py-3 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <a class="home_button text-lg font-semibold" href="index.html">Home</a>
+
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <div class="text-center space-y-8 max-w-2xl mx-auto px-4">
+            <h1 class="typography_h1 text-5xl md:text-7xl font-bold tracking-tighter">Let's Connect.</h1>
+            <p class="typography_body text-lg md:text-xl">I'm happy to connect and looking for new opportunities to learn.</p>
+            <div class="contact_links space-y-6">
+                <a class="contact_link text-2xl md:text-3xl group transition-all duration-300 ease-in-out" href="mailto:asad66r6@gmail.com">
+                    <span class="bg-left-bottom bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent-color)] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                        asad66r6@gmail.com
+                    </span>
+                </a>
+                <div class="flex items-center justify-center space-x-4 pt-4">
+                    <!-- === MODIFIED: Changed bubble to rounded box (rounded-full -> rounded-lg) === -->
+                    <!-- Add your LinkedIn URL to href="#" -->
+                    <a class="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-lg text-[var(--text-secondary)] hover:bg-gray-700 hover:text-white transition-colors" href="#">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+                        </svg>
+                    </a>
+                    <!-- === MODIFIED: Changed bubble to rounded box (rounded-full -> rounded-lg) === -->
+                    <!-- Add your GitHub URL to href="#" -->
+                    <a class="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-lg text-[var(--text-secondary)] hover:bg-gray-700 hover:text-white transition-colors" href="#">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
